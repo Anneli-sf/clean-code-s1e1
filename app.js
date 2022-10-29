@@ -31,12 +31,13 @@ var createNewTaskElement=function(taskString){
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
 
-
+  listItem.className = "list__item";
   label.innerText=taskString;
   label.className="task__label";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
+  checkBox.className="task__checked";
   editInput.type="text";
   editInput.className="task__input";
 
@@ -45,6 +46,8 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.className="button btn-delete";
   deleteButtonImg.src="./remove.svg";
+  deleteButtonImg.alt = "Delete task";
+  deleteButtonImg.className = "btn-delete__img"; //----------------
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
