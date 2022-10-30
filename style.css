@@ -108,10 +108,6 @@ button {
   margin: 0 0 20px;
 }
 
-.task-add__input {
-  width: 318px;
-}
-
 /* Task list */
 .list__item {
   overflow: hidden;
@@ -123,10 +119,6 @@ button {
   align-items: center;
 }
 
-.list__item > * {
-  vertical-align: middle;
-}
-
 .task__checked {
   margin: 0 10px;
 }
@@ -135,10 +127,6 @@ button {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
-}
-
-.list__item .task__input {
   width: 226px;
 }
 
@@ -165,7 +153,6 @@ button {
 
 .edite-list__item .task__input {
   display: inline-block;
-  width: 224px;
 }
 
 .edite-list__item .task__label {
